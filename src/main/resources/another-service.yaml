@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: another-service
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: production
+  system: example-system
+  dependsOn:
+    - component:example-service

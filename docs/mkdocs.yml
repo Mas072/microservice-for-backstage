@@ -1,0 +1,12 @@
+site_name: 'Another Service'
+site_description: 'Maven-based service documentation'
+
+nav:
+  - Home: index.md
+  - Dependencies: dependencies.md
+
+plugins:
+  - techdocs-core
+
+theme:
+  name: material
