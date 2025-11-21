@@ -1,0 +1,27 @@
+# yaml
+name: Generate Maven Dependency Tree
+on: workflow_dispatch
+
+jobs:
+  generate-dependency-tree:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Generate Maven Dependency Tree
+        run: mvn -B dependency:tree -DoutputFile=dependency-tree.json -DoutputType=json
+
+
+      - name: Upload Dependency Tree Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: dependency-tree
+          path: dependency-tree.json
+          if-no-files-found: error
