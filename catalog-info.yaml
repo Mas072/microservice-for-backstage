@@ -2,9 +2,11 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: microservice-for-backstage
+  description: Spring Boot microservice for Backstage testing
   annotations:
     github.com/project-slug: Mas072/microservice-for-backstage
+    backstage.io/source-location: url:https://github.com/Mas072/microservice-for-backstage
 spec:
-  type: other
-  lifecycle: unknown
-  owner: my-group
+  type: service
+  lifecycle: experimental
+  owner: user:default/Mas072
