@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>microservice_for_backstage</artifactId>
+	<artifactId>flight-tracker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>microservice_for_backstage</name>
-	<description>Demo project for Spring Boot</description>
+	<name>flight-tracker</name>
+	<description>Flight tracker service for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>

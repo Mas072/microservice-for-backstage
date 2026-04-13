@@ -8,4 +8,4 @@ spec:
   lifecycle: production
   system: example-system
   dependsOn:
-    - component:example-service
+    - component:flight-tracker
