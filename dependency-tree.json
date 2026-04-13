@@ -1,0 +1,476 @@
+{
+  "groupId": "com.example",
+  "artifactId": "microservice_for_backstage",
+  "version": "0.0.1-SNAPSHOT",
+  "children": [
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-web",
+      "version": "4.0.0-SNAPSHOT",
+      "children": [
+        {
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-jackson",
+          "version": "4.0.0-SNAPSHOT",
+          "children": [
+            {
+              "groupId": "org.springframework.boot",
+              "artifactId": "spring-boot-jackson",
+              "version": "4.0.0-SNAPSHOT",
+              "children": [
+                {
+                  "groupId": "tools.jackson.core",
+                  "artifactId": "jackson-databind",
+                  "version": "3.0.2",
+                  "children": [
+                    {
+                      "groupId": "com.fasterxml.jackson.core",
+                      "artifactId": "jackson-annotations",
+                      "version": "2.20",
+                      "children": []
+                    },
+                    {
+                      "groupId": "tools.jackson.core",
+                      "artifactId": "jackson-core",
+                      "version": "3.0.2",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter-tomcat",
+          "version": "4.0.0-SNAPSHOT",
+          "children": [
+            {
+              "groupId": "org.springframework.boot",
+              "artifactId": "spring-boot-starter-tomcat-runtime",
+              "version": "4.0.0-SNAPSHOT",
+              "children": [
+                {
+                  "groupId": "org.springframework.boot",
+                  "artifactId": "spring-boot-web-server",
+                  "version": "4.0.0-SNAPSHOT",
+                  "children": []
+                },
+                {
+                  "groupId": "org.apache.tomcat.embed",
+                  "artifactId": "tomcat-embed-core",
+                  "version": "11.0.14",
+                  "children": []
+                },
+                {
+                  "groupId": "org.apache.tomcat.embed",
+                  "artifactId": "tomcat-embed-el",
+                  "version": "11.0.14",
+                  "children": []
+                },
+                {
+                  "groupId": "org.apache.tomcat.embed",
+                  "artifactId": "tomcat-embed-websocket",
+                  "version": "11.0.14",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "groupId": "org.springframework.boot",
+              "artifactId": "spring-boot-tomcat",
+              "version": "4.0.0-SNAPSHOT",
+              "children": []
+            }
+          ]
+        },
+        {
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-http-converter",
+          "version": "4.0.0-SNAPSHOT",
+          "children": [
+            {
+              "groupId": "org.springframework",
+              "artifactId": "spring-web",
+              "version": "7.0.1",
+              "children": [
+                {
+                  "groupId": "org.springframework",
+                  "artifactId": "spring-beans",
+                  "version": "7.0.1",
+                  "children": []
+                },
+                {
+                  "groupId": "io.micrometer",
+                  "artifactId": "micrometer-observation",
+                  "version": "1.16.0",
+                  "children": [
+                    {
+                      "groupId": "io.micrometer",
+                      "artifactId": "micrometer-commons",
+                      "version": "1.16.0",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-webmvc",
+          "version": "4.0.0-SNAPSHOT",
+          "children": [
+            {
+              "groupId": "org.springframework.boot",
+              "artifactId": "spring-boot-servlet",
+              "version": "4.0.0-SNAPSHOT",
+              "children": []
+            },
+            {
+              "groupId": "org.springframework",
+              "artifactId": "spring-webmvc",
+              "version": "7.0.1",
+              "children": [
+                {
+                  "groupId": "org.springframework",
+                  "artifactId": "spring-aop",
+                  "version": "7.0.1",
+                  "children": []
+                },
+                {
+                  "groupId": "org.springframework",
+                  "artifactId": "spring-expression",
+                  "version": "7.0.1",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-restclient",
+      "version": "4.0.0-SNAPSHOT",
+      "children": [
+        {
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-starter",
+          "version": "4.0.0-SNAPSHOT",
+          "children": [
+            {
+              "groupId": "org.springframework.boot",
+              "artifactId": "spring-boot-starter-logging",
+              "version": "4.0.0-SNAPSHOT",
+              "children": [
+                {
+                  "groupId": "ch.qos.logback",
+                  "artifactId": "logback-classic",
+                  "version": "1.5.21",
+                  "children": [
+                    {
+                      "groupId": "ch.qos.logback",
+                      "artifactId": "logback-core",
+                      "version": "1.5.21",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "groupId": "org.apache.logging.log4j",
+                  "artifactId": "log4j-to-slf4j",
+                  "version": "2.25.2",
+                  "children": [
+                    {
+                      "groupId": "org.apache.logging.log4j",
+                      "artifactId": "log4j-api",
+                      "version": "2.25.2",
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "groupId": "org.slf4j",
+                  "artifactId": "jul-to-slf4j",
+                  "version": "2.0.17",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "groupId": "jakarta.annotation",
+              "artifactId": "jakarta.annotation-api",
+              "version": "3.0.0",
+              "children": []
+            },
+            {
+              "groupId": "org.yaml",
+              "artifactId": "snakeyaml",
+              "version": "2.5",
+              "children": []
+            }
+          ]
+        },
+        {
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-restclient",
+          "version": "4.0.0-SNAPSHOT",
+          "children": [
+            {
+              "groupId": "org.springframework.boot",
+              "artifactId": "spring-boot-http-client",
+              "version": "4.0.0-SNAPSHOT",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-devtools",
+      "version": "4.0.0-SNAPSHOT",
+      "children": [
+        {
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot",
+          "version": "4.0.0-SNAPSHOT",
+          "children": [
+            {
+              "groupId": "org.springframework",
+              "artifactId": "spring-context",
+              "version": "7.0.1",
+              "children": []
+            }
+          ]
+        },
+        {
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-autoconfigure",
+          "version": "4.0.0-SNAPSHOT",
+          "children": []
+        }
+      ]
+    },
+    {
+      "groupId": "org.projectlombok",
+      "artifactId": "lombok",
+      "version": "1.18.42",
+      "children": []
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-test",
+      "version": "4.0.0-SNAPSHOT",
+      "children": [
+        {
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-test",
+          "version": "4.0.0-SNAPSHOT",
+          "children": []
+        },
+        {
+          "groupId": "org.springframework.boot",
+          "artifactId": "spring-boot-test-autoconfigure",
+          "version": "4.0.0-SNAPSHOT",
+          "children": []
+        },
+        {
+          "groupId": "com.jayway.jsonpath",
+          "artifactId": "json-path",
+          "version": "2.9.0",
+          "children": [
+            {
+              "groupId": "org.slf4j",
+              "artifactId": "slf4j-api",
+              "version": "2.0.17",
+              "children": []
+            }
+          ]
+        },
+        {
+          "groupId": "jakarta.xml.bind",
+          "artifactId": "jakarta.xml.bind-api",
+          "version": "4.0.4",
+          "children": [
+            {
+              "groupId": "jakarta.activation",
+              "artifactId": "jakarta.activation-api",
+              "version": "2.1.4",
+              "children": []
+            }
+          ]
+        },
+        {
+          "groupId": "net.minidev",
+          "artifactId": "json-smart",
+          "version": "2.6.0",
+          "children": [
+            {
+              "groupId": "net.minidev",
+              "artifactId": "accessors-smart",
+              "version": "2.6.0",
+              "children": [
+                {
+                  "groupId": "org.ow2.asm",
+                  "artifactId": "asm",
+                  "version": "9.7.1",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "groupId": "org.assertj",
+          "artifactId": "assertj-core",
+          "version": "3.27.6",
+          "children": [
+            {
+              "groupId": "net.bytebuddy",
+              "artifactId": "byte-buddy",
+              "version": "1.17.8",
+              "children": []
+            }
+          ]
+        },
+        {
+          "groupId": "org.awaitility",
+          "artifactId": "awaitility",
+          "version": "4.3.0",
+          "children": []
+        },
+        {
+          "groupId": "org.hamcrest",
+          "artifactId": "hamcrest",
+          "version": "3.0",
+          "children": []
+        },
+        {
+          "groupId": "org.junit.jupiter",
+          "artifactId": "junit-jupiter",
+          "version": "6.0.1",
+          "children": [
+            {
+              "groupId": "org.junit.jupiter",
+              "artifactId": "junit-jupiter-api",
+              "version": "6.0.1",
+              "children": [
+                {
+                  "groupId": "org.opentest4j",
+                  "artifactId": "opentest4j",
+                  "version": "1.3.0",
+                  "children": []
+                },
+                {
+                  "groupId": "org.junit.platform",
+                  "artifactId": "junit-platform-commons",
+                  "version": "6.0.1",
+                  "children": []
+                },
+                {
+                  "groupId": "org.apiguardian",
+                  "artifactId": "apiguardian-api",
+                  "version": "1.1.2",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "groupId": "org.junit.jupiter",
+              "artifactId": "junit-jupiter-params",
+              "version": "6.0.1",
+              "children": []
+            },
+            {
+              "groupId": "org.junit.jupiter",
+              "artifactId": "junit-jupiter-engine",
+              "version": "6.0.1",
+              "children": [
+                {
+                  "groupId": "org.junit.platform",
+                  "artifactId": "junit-platform-engine",
+                  "version": "6.0.1",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "groupId": "org.mockito",
+          "artifactId": "mockito-core",
+          "version": "5.20.0",
+          "children": [
+            {
+              "groupId": "net.bytebuddy",
+              "artifactId": "byte-buddy-agent",
+              "version": "1.17.8",
+              "children": []
+            },
+            {
+              "groupId": "org.objenesis",
+              "artifactId": "objenesis",
+              "version": "3.3",
+              "children": []
+            }
+          ]
+        },
+        {
+          "groupId": "org.mockito",
+          "artifactId": "mockito-junit-jupiter",
+          "version": "5.20.0",
+          "children": []
+        },
+        {
+          "groupId": "org.skyscreamer",
+          "artifactId": "jsonassert",
+          "version": "1.5.3",
+          "children": [
+            {
+              "groupId": "com.vaadin.external.google",
+              "artifactId": "android-json",
+              "version": "0.0.20131108.vaadin1",
+              "children": []
+            }
+          ]
+        },
+        {
+          "groupId": "org.springframework",
+          "artifactId": "spring-core",
+          "version": "7.0.1",
+          "children": [
+            {
+              "groupId": "commons-logging",
+              "artifactId": "commons-logging",
+              "version": "1.3.5",
+              "children": []
+            },
+            {
+              "groupId": "org.jspecify",
+              "artifactId": "jspecify",
+              "version": "1.0.0",
+              "children": []
+            }
+          ]
+        },
+        {
+          "groupId": "org.springframework",
+          "artifactId": "spring-test",
+          "version": "7.0.1",
+          "children": []
+        },
+        {
+          "groupId": "org.xmlunit",
+          "artifactId": "xmlunit-core",
+          "version": "2.10.4",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
