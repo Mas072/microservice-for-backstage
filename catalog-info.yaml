@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: microservice-for-backstage
+  name: flight-tracker
   description: Spring Boot microservice for Backstage testing
   annotations:
     github.com/project-slug: Mas072/microservice-for-backstage
